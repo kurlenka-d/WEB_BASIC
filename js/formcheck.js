@@ -20,9 +20,6 @@
           var form = $(this),
             btn = form.find('.btnsubmit');
 
-          // form.find('.rfield').addClass('empty_field').parents('.rline').append('<span class="rfield_error">Заполните это поле</span>');
-          // btn.addClass('disabled');
-
           // Функция проверки полей формы      
           function checkInput() {
 
