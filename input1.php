@@ -2,7 +2,7 @@
 
 $apiToken = "1122936546:AAFX2goLcgvARa4YfsiBuso4tOV5yMVODGY";
 
-$filter_result = filter_input(INPUT_POST, 'comment', FILTER_SANITIZE_STRING);
+$filter_result = filter_input(INPUT_POST, 'user_name\n comment', FILTER_SANITIZE_STRING);
 
 $data = [
     'chat_id' => '-1001262368010',

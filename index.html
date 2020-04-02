@@ -1,32 +1,43 @@
-<!DOCTYPE HTML>
+<!doctype html>
+
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>INPUT</title>
+  <meta charset="utf-8" />
 </head>
 
 <body>
 
-    <form name="test" method="post" action="input1.php">
-        <p><b>Имя (обязательное):</b><br>
-            <input type="text" size="40">
-        </p>
-        <p><b>Телефон (обязательное):</b><br>
-            <input type="text" size="40">
-        </p>
-        <p><b>E-mail (обязательное):</b><br>
-            <input type="text" size="40">
-        </p>
+  <form method="post" class="form_check form_style" action="input1.php">
 
-        <p><b>Текст сообщения</b>
-            <Br>
-            <textarea name="comment" cols="40" rows="3"></textarea></p>
-        <p><input type="submit" value="Отправить">
-            <input type="reset" value="Отмена"></p>
-    </form>
+    <p class="rline">
+      <label for="user_name"><b>Имя (обязательное):</b></label><br />
+      <input type="text" class="rfield" id="user_name" name="user_name" />
+    </p>
+    <p class="rline">
+      <label for="user_phone"><b>Телефон (обязательное):</b></label><br />
+      <input type="tel" class="rfield phonefield" id="user_phone" placeholder="+375-12-345-67-89" name="user_phone" />
+    </p>
+
+    <p class="rline">
+      <label for="user_mail"><b>E-mail (обязательное):</b></label><br />
+      <input type="text" class="rfield mailfield" id="user_mail" name="user_mail" />
+    </p>
+
+    <p class="rline">
+      <label for="user_text"> <b>Текст сообщения</b></label>
+      <br />
+      <textarea name="comment" cols="40" rows="3" id="user_work"></textarea></p>
+    <p><input type="submit" value="Отправить" class="btnsubmit">
+      <input type="reset" value="Отмена"></p>
+
+  </form>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/is.mobile.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/formcheck.js"></script>
 
 </body>
-
 
 </html>
